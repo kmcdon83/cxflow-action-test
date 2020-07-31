@@ -29,3 +29,4 @@ jobs:
         checkmarx-url: ${{ secrets.CHECKMARX_URL }} 
         checkmarx-username: ${{ secrets.CHECKMARX_USERNAME }}
         checkmarx-password: ${{ secrets.CHECKMARX_PASSWORD }}
+        checkmarx-client-secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
