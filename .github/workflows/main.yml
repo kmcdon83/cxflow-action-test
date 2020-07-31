@@ -24,7 +24,8 @@ jobs:
     - name: Checkmarx CxFlow Action
       uses: checkmarx-ts/checkmarx-cxflow-github-action@0.1
       with:
+        project: GithubActionTest
+        team: '\CxServer\SP\Checkmarx'
         checkmarx-url: ${{ secrets.CHECKMARX_URL }} 
-        team: '\\CxServer\\SP\\Checkmarx'
         checkmarx-username: ${{ secrets.CHECKMARX_USERNAME }}
         checkmarx-password: ${{ secrets.CHECKMARX_PASSWORD }}
