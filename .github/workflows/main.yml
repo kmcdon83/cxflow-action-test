@@ -26,7 +26,7 @@ jobs:
       with:
         project: GithubActionTest
         team: '\CxServer\SP\Checkmarx'
-        checkmarx-url: 'https://ast.dev.checkmarx-ts.com'
-        checkmarx-username: admin
-        checkmarx-password: ${{ secrets.CHECKMARX_PASSWORD }}
-        checkmarx-client-secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
+        checkmarx_url: ${{ secrets.CHECKMARX_URL }}
+        checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
+        checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
+        checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
