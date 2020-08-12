@@ -30,7 +30,7 @@ jobs:
         checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
         checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
         checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
-        params: --severity=High 
+        params: --severity=High --severity=Medium
     - name: Init CodeQL
       uses: github/codeql-action/init@v1
     - name: Expose report
