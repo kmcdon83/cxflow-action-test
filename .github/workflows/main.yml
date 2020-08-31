@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-action@0.1
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@1.0
       with:
         project: GithubActionTest
         team: '\CxServer\SP\Checkmarx'
