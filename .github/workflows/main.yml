@@ -25,7 +25,7 @@ jobs:
       uses: checkmarx-ts/checkmarx-cxflow-github-action@1.0-cxgo
       with:
         project: GithubActionTest
-        team: '/Demo/CxFlow/Custodela'
+        team: '\Demo\CxFlow\Custodela'
         checkmarx_client_secret: ${{ secrets.CXGO_TOKEN }}
     - name: Init CodeQL
       uses: github/codeql-action/init@v1
