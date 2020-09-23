@@ -29,7 +29,7 @@ jobs:
 #        checkmarx_client_secret: ${{ secrets.CXGO_TOKEN }}
     - uses: actions/checkout@v2
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-action@1.0.1
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.0
       with:
         project: GithubActionTest
         team: '\CxServer\SP\Checkmarx'
