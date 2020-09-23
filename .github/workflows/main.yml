@@ -21,12 +21,22 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+#    - name: Checkmarx CxFlow Action
+#      uses: checkmarx-ts/checkmarx-cxflow-github-action@1.0-cxgo
+#      with:
+#        project: GithubActionTest
+#        team: '\Demo\CxFlow\Custodela'
+#        checkmarx_client_secret: ${{ secrets.CXGO_TOKEN }}
+    - uses: actions/checkout@v2
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-action@1.0-cxgo
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.0
       with:
         project: GithubActionTest
-        team: '\Demo\CxFlow\Custodela'
-        checkmarx_client_secret: ${{ secrets.CXGO_TOKEN }}
+        team: '\CxServer\SP\Checkmarx'
+        checkmarx_url: ${{ secrets.CHECKMARX_URL }}
+        checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
+        checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
+        checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
     - name: Init CodeQL
       uses: github/codeql-action/init@v1
     - name: Expose report
